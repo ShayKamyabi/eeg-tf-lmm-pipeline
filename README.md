@@ -16,8 +16,8 @@ The experimental methodology involves a decision-making task featuring both **si
 The code is organized sequentially to match the order of analysis:
 
 * **`01_time_frequency/`**: Scripts to extract and analyze brain wave oscillations and spectral power across the chosen single-option trials.
-* **`02_ult_LMM1/`**: 
-* **`03_ult_LMM2/`**: The statistical modeling framework, including the setup and execution of the mixed ANOVAs and both Linear Mixed Models (`02-ult_lmm1` and `03-ult_lmm2`).
+* **`02_ult_LMM1/`**: The statistical modeling framework, including the setup and execution of the mixed ANOVA and Linear Mixed Model 1 (`02-ult_lmm1`).
+* **`03_ult_LMM2/`**: The statistical modeling framework, including the setup and execution of the mixed ANOVA and Linear Mixed Model 2 (`03-ult_lmm2`).
 
 ## Prerequisites and Requirements
 
