@@ -31,8 +31,8 @@ data.CC_Group = string(data.CC_Group);
 data.CC_Group(:) = "Med CC";
 
 % Apply the true labels
-data.CC_Group(ismember(double(string(data.ID)), true_low_ids)) = "Low CC";
-data.CC_Group(ismember(double(string(data.ID)), true_high_ids)) = "High CC";
+data.CC_Group(ismember(double(string(data.ID)), low_ids)) = "Low CC";
+data.CC_Group(ismember(double(string(data.ID)), high_ids)) = "High CC";
 
 % Convert back to categorical 
 data.CC_Group = categorical(data.CC_Group);
