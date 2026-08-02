@@ -21,8 +21,8 @@ data.ID = categorical(data.ID);
 % --- CRITICAL FIX: FORCING THE CORRECT 19 vs 19 LABELS ---
 
 % Define the exact IDs based on your updated Stroop boundaries
-true_low_ids  = [1, 9, 11, 12, 13, 15, 27, 28, 38, 40, 45, 47, 48, 50, 52, 53, 60, 66, 67];
-true_high_ids = [6, 17, 21, 22, 25, 29, 31, 32, 33, 36, 37, 39, 41, 46, 49, 54, 55, 58, 61];
+low_ids  = [1, 9, 11, 12, 13, 15, 27, 28, 38, 40, 45, 47, 48, 50, 52, 53, 60, 66, 67];
+high_ids = [6, 17, 21, 22, 25, 29, 31, 32, 33, 36, 37, 39, 41, 46, 49, 54, 55, 58, 61];
 
 % Convert CC_Group to string temporarily to easily overwrite them
 data.CC_Group = string(data.CC_Group);
