@@ -1,0 +1,24 @@
+# MATLAB auto-saves and workspaces
+*.asv
+*.m~
+*.mat
+*.fig
+
+# EEG and Data files
+*.set
+*.fdt
+*.edf
+*.bdf
+*.vhdr
+*.vmrk
+*.eeg
+*.csv
+
+# OS generated hidden files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
