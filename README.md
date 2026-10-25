@@ -24,7 +24,7 @@ The main analyses focus on how model-derived decision conflict relates to respon
 ├── Cumulative_Prospect_Theory.m
 ├── LMM1.m
 ├── LMM2.m
-├── AMBIGUITY_PRIOR_SENSITIVITYn.m
+├── AMBIGUITY_PRIOR_SENSITIVITY.m
 ├── HA_RP_RELIABILITY.m
 └── README.md
 ```
@@ -33,7 +33,7 @@ The main analyses focus on how model-derived decision conflict relates to respon
 
 ### 1. EEG time-frequency and ROI extraction
 
-**Script:** `MASTER_TF_ROI_GitHub_clean.m`
+**Script:** `TF_Analysis.m`
 
 This script performs the main EEG time-frequency analysis from preprocessed EEGLAB `.set` files.
 
@@ -84,7 +84,7 @@ problem_log.csv
 
 ### 2. Beta time-course and scalp figures
 
-**Script:** `BETA_FIGURES_GitHub_clean.m`
+**Script:** `BETA_FIGURES.m`
 
 This script generates the EEG figures from the saved time-frequency output.
 
@@ -109,7 +109,7 @@ A light smoothing/interpolation step is used only for waveform display. Statisti
 
 ### 3. CPT model figures
 
-**Script:** `CPT_FIGURES_GitHub_clean.m`
+**Script:** `Cumulative_Prospect_Theory.m`
 
 This script generates figures describing the computational model and its empirical behavior.
 
@@ -146,7 +146,7 @@ The absolute subjective value, `|SV|`, is used as a model-derived index of proxi
 
 ### 4. Behavioral mixed-effects analysis: LMM1
 
-**Script:** `LMM1_GitHub_clean.m`
+**Script:** `LMM1.m`
 
 LMM1 tests whether the relationship between model-derived conflict and response timing differs between cognitive-control groups.
 
@@ -193,7 +193,7 @@ The script also produces:
 
 ### 5. Neurobehavioral mixed-effects analysis: LMM2
 
-**Script:** `LMM2_Q1_GitHub_clean.m`
+**Script:** `LMM2.m`
 
 LMM2 tests whether the conflict-response-time relationship varies as a function of frontoparietal beta modulation and cognitive-control group.
 
@@ -236,7 +236,7 @@ for interpretation, while the statistical model itself is fitted using `+Z_Abs_S
 
 ### 6. Ambiguity-prior sensitivity analysis
 
-**Script:** `AMBIGUITY_PRIOR_SENSITIVITY_GitHub_clean.m`
+**Script:** `AMBIGUITY_PRIOR_SENSITIVITY.m`
 
 This script evaluates whether the main LMM1 and LMM2 results depend on assumptions used to compute subjective value on ambiguous trials.
 
@@ -301,7 +301,7 @@ AMBIGUITY_PRIOR_SENSITIVITY_RESULTS.csv
 
 ### 7. HA-RP split-half reliability
 
-**Script:** `HA_RP_RELIABILITY_GitHub_clean.m`
+**Script:** `HA_RP_RELIABILITY.m`
 
 This script estimates the reliability of the participant-level HA-RP beta modulation index.
 
@@ -432,21 +432,9 @@ topoplot
 
 ## Running the analyses
 
-The scripts are intended to be run approximately in the following order:
+The scripts are intended to be run approximately in the order.
 
-```text
-1. MASTER_TF_ROI_GitHub_clean.m
-2. BETA_FIGURES_GitHub_clean.m
-3. CPT_FIGURES_GitHub_clean.m
-4. LMM1_GitHub_clean.m
-5. LMM2_Q1_GitHub_clean.m
-6. AMBIGUITY_PRIOR_SENSITIVITY_GitHub_clean.m
-7. HA_RP_RELIABILITY_GitHub_clean.m
-```
-
-Before running a script, update the file and output paths near the top of the file as needed.
-
-Some scripts depend on intermediate files created by earlier stages.
+The scripts depend on intermediate files created by earlier stages.
 
 ## Reproducibility
 
